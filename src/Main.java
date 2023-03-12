@@ -1,37 +1,9 @@
 import processing.core.PApplet;
 
-public class Main extends PApplet {
+public class Main {
 
     public static void main(String[] args) {
-        PApplet.main(new String[]{"Main"});
-    }
-    float[] randomCounts;
-
-    @Override
-    public void settings() {
-        size(640,360);
-    }
-
-    @Override
-    public void setup(){
-        randomCounts = new float[20];
-    }
-
-    @Override
-    public void draw(){
-        background(255);
-
-        int index = (int)random(randomCounts.length);
-        randomCounts[index]++;
-
-        stroke(0);
-        strokeWeight(2);
-        fill(127);
-
-        int w = width / randomCounts.length;
-
-        for(int x = 0; x < randomCounts.length; x++){
-            rect(x*w, height - randomCounts[x],w-1,randomCounts[x]);
-        }
+//        PApplet.main(new String[]{"introduction.RandomDistribution"});
+        PApplet.main(new String[]{"introduction.Gaussian"});
     }
 }
