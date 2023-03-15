@@ -1,6 +1,7 @@
 package vectors;
 
 import processing.core.PApplet;
+import processing.core.PVector;
 
 public class VectorSub extends PApplet{
 
@@ -27,7 +28,6 @@ public class VectorSub extends PApplet{
         strokeWeight(2.0f);
         stroke(0);
         line(0,0,mouse.x, mouse.y);
-
 
     }
 
